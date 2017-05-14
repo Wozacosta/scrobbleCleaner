@@ -32,10 +32,6 @@ GM_addStyle ( "tr.sameday td.chartlist-timestamp span {color: red !important; fo
 GM_addStyle ( "td.deletion {cursor: pointer !important; }");
 GM_addStyle ( "td.chartlist-timestamp, td.chartlist-album span a, td.chartlist-duration {color: black !important; }");
 
-
-
-
-
 (function() {
     'use strict';
 
@@ -87,7 +83,6 @@ GM_addStyle ( "td.chartlist-timestamp, td.chartlist-album span a, td.chartlist-d
             e.preventDefault();
             delBtn.click();
         };
-       // delTd.style.display = "none";
        el.appendChild(delTd);
     });
     let nbSongs = +datesSongElements.length;
